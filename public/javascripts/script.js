@@ -10,8 +10,10 @@ socket.on('tempReading', function (data) {
 
 
 function findByClass (matchClass) {
-    var elems = document.getElementsByTagName('*'), i;
+    var elems = document.getElementsByTagName('*')
+    var i;
     var found = false;
+    
     for (i in elems) {
     	found = (' ' + elems[i].className + ' ').indexOf(' ' + matchClass + ' ')
                 > -1
